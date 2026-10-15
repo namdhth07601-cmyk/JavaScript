@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form mua hàng</h1>
+    <form action="" novalidate onsubmit="return validateForm(event)">
+    <br>
+    Họ tên : <input type="text" id="HoTen" /> <br/>
+    <div style="color: red;" id="errorHoTen"></div>
+    SĐT : <input type="number" id="SDT" /> <br/>
+    <div style="color: red;" id="errorSDT"></div>   
+    Email : <input type="email" id="Email" /> <br/>
+    <div style="color: red;" id="errorEmail"></div>
+    </form>
+    Loại hàng:
+      <select id="loaiHang" oninput="tinhTien()">
+        <option value="80000000000">Iphone 18 proMax 2TB</option>
+        <option value="100000000000">Iphone 18 duo 2TB</option>
+      </select>
+      <br />
+      Giá sản phẩm: <input type="text" disabled id="giaSP" /> <br />
+      Số lượng : <input type="number" id="soLuong" oninput="tinhTien()" /><br />
+      Thành tiền: <input type="text" disabled id="thanhTien" />
+      <input type="submit" value="submit" />
+    <script src="./Lesson13.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent">
+      <div
+        id="child"
+        class="child"
+        style="background-color: rgb(100, 100, 100)"
+        onmouseenter="changeColor()"
+        onmouseleave="deleteColor()"
+      >
+        con 1
+      </div>
+      <div
+        id="child2"
+        class="child"
+        onmouseenter="changeColor()"
+        onmouseleave="deleteColor()"
+      >
+        con 2
+      </div>
+      <div
+        id="child3 "
+        class="child"
+        onmouseenter="changeColor()"
+        onmouseleave="deleteColor()"
+      >
+        con 3
+      </div>
+      <button
+        onmouseenter="changePosition()"
+        id="noButton"
+        style="position: absolute; left: 1000px; top: 100px"
+      >
+        không
+      </button>
+    </div>
+    <script src="./lesson11.js"></script>
+  </body>
+</html>
